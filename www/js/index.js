@@ -32,4 +32,19 @@ document.addEventListener("deviceready",onDeviceReady);
 function onDeviceReady()
 {
     alert("device is ready by sumeet");
+    document.addEventListener("backbutton",onBack);
+    document.addEventListener("pause",onPause);
+    document.addEventListener("resume",onResume);
+    document.addEventListener("volumedownbutton",onVolumeDown);
+    document.addEventListener("volumeupbutton",onVolumeup);
 }
+ function onBack(){
+ alert("button is back")
+
+ }
+ function onPause(){
+ alert("button is pause")
+ }
+ function onResume(){
+ alert("resume is pressed")
+ }
